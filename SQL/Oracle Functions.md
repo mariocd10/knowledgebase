@@ -45,10 +45,13 @@ Similar to an IF-THEN-ELSE statement.
 DECODE( expression , search , result [, search , result]... [, default] )
 ```
 ### Parameters
-**expression**: value to compare. Converted to the data type of the first *search* value before comparing
-**search**: value compared to expression. all search values converted to data type of first *search* value before comparing
+**expression**: value to compare. Converted to the data type of the first *search* value before comparing.
+
+**search**: value compared to expression. all search values converted to data type of first *search* value before comparing.
+
 **result**: value returned, if *expression* is = to *search*.
-**default**: optional. If no match found, it will return *default*. If omitted, function will return NULL if no match found
+
+**default**: optional. If no match found, it will return *default*. If omitted, function will return NULL if no match found.
 
 ### Example
 ```sql
