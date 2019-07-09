@@ -8,7 +8,7 @@ Using the %TYPE attribute ensures that type compatibility between table columns 
 name [table | view ].column%TYPE
 name variable%TYPE
 ```
-
+### Parameters
 **name**: The identifier for the variable being declared.
 
 **table**: the identifier for the table whose column is to be referenced.
