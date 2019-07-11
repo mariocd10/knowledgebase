@@ -17,3 +17,9 @@ must have the same `id` attribute value.
 ```
 
 When the user clicks on the Contacts link, they'll be taken to the section of the webpage with the Contacts header element.
+
+## Create a Dead Link
+This is useful when you want to add an `a` element but not sure where it will link to yet. Also, when changing the behavior of a link using JavaScript.
+```html
+<a href="#"></a>
+```
