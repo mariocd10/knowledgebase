@@ -30,6 +30,22 @@ Type | Description
 &lt;input type="text"> | One-line text field
 &lt;input type="radio"> | Radio Button
 &lt;input type="submit"> | Submit Button (submit form)
+&ltinput type="checkbox"> | Check Box
+
+By surrounding an `input` element with a `label` element it wil automatically associate the input field with the label surrounding it.
+All related radio button and checkbox elements must have the same `name` attribute. 
+
+It is considered best practice to explicitly define a relationship between a checkbox `input` and its corresponding `label` by setting the `for` attribute on the `label` element to match the `id` attribute of the associated `input` element:
+```html
+<label for="indoor">
+  <input id="indoor" type="radio" name="indoor-outdoor">
+  Indoor
+</label>
+<label for="outdoor">
+  <input id="outdoor" type="radio" name="indoor-outdoor"> 
+  Outdoor
+</label>
+```
 
 ### `name` Attribute
 Each input must have a name attributed. If ommitted the data of that input field won't be sent.
