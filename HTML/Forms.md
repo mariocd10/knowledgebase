@@ -1,6 +1,10 @@
 # Forms
 Building web forms lets you submit data to a server using pure HTML. You can do this by specifying the action on the `form` element.
 
+Form fields can be set as required and will not let user submit form unless there those fields are filled out.
+```html
+<input type="text" required>
+```
 ## &lt;form> Element
 ### action Attribute
 Defines the action to be performed when the form is submitted. Normally it would be sent to a page on the server to process the input.
