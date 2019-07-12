@@ -63,3 +63,8 @@ Placeholder text is displayed in the `input` element before the user has inputte
 <input type="text" placeholder="this is placeholder text">
 ```
 
+### `checked` Attribute
+Set a checkbox or radiobutton to be checked by default.
+```html
+<input type="radio" name="test-name" checked>
+```
