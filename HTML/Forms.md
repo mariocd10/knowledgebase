@@ -1,5 +1,9 @@
 # Forms
+Building web forms lets you submit data to a server using pure HTML. You can do this by specifying the action on the `form` element.
 
+```html
+<form action="/url-where-you-want-to-submit-form-data"></form>
+```
 ## &lt;form> Element
 
 ## &lt;input> Element
