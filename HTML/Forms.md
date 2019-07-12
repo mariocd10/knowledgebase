@@ -10,13 +10,13 @@ If ommited, the action is set to the current page.
 <form action="/url-where-you-want-to-submit-form-data"></form>
 ```
 
-### target Attribute
+### `target` Attribute
 The `target` attribute specifies if the submitted result will be open in a new browser tab, a frame, or in the current window.
 Default value = `_self`, which means the current window. To open in a new browser tab the value must be `_blank`
 ```html
 <form action="action_page.php" target="_blank"></form>
 ```
-### method Attribute
+### `method` Attribute
 This attribute specifies the *HTTP* method (**GET** or **POST**) to be used when submitting the form data:
 ```html
 <form action="/action_page.php" method="get"></form>
@@ -52,3 +52,10 @@ Each input must have a name attributed. If ommitted the data of that input field
 ```html
 <input type="text" name="lastname" value="Mouse">
 ```
+
+### `placeholder` Attribute
+Placeholder text is displayed in the `input` element before the user has inputted anything.
+```html
+<input type="text" placeholder="this is placeholder text">
+```
+
