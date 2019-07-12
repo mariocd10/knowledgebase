@@ -17,6 +17,10 @@ Default value = `_self`, which means the current window. To open in a new browse
 <form action="action_page.php" target="_blank"></form>
 ```
 ### method Attribute
+This attribute specifies the *HTTP* method (**GET** or **POST**) to be used when submitting the form data:
+```html
+<form action="/action_page.php" method="get"></form>
+```
 
 ## &lt;input> Element
 The `<input>` element is the most important form element. It can be displayed in many ways depending on the **type** attribute.
@@ -26,3 +30,9 @@ Type | Description
 &lt;input type="text"> | One-line text field
 &lt;input type="radio"> | Radio Button
 &lt;input type="submit"> | Submit Button (submit form)
+
+### `name` Attribute
+Each input must have a name attributed. If ommitted the data of that input field won't be sent.
+```html
+<input type="text" name="lastname" value="Mouse">
+```
