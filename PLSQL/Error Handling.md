@@ -10,7 +10,7 @@ The following example calculates and stores a price-to-earning ratio for a compa
 If the company has zero earnings, the predefined exception will be raised and the exception handler block will then execute.
 The *Others* handler catches any exceptions that were not explicitly named.
 
-```PLSQL
+```sql
 DECLARE
    pe_ratio NUMBER(3,1);
 BEGIN
