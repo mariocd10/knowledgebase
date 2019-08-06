@@ -10,3 +10,12 @@ p {
   color: red;
   }
 ```
+## Attribute Selector
+The selector matches and styles elements with a specific attribute value.
+
+### Example
+```css
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+```
