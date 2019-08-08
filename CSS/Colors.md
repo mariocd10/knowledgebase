@@ -15,3 +15,19 @@ body {
   color: #000000;
 }
 ```
+
+This gives possibility for 16 million colors which can feel overwhelming when finding a color. Fortunately, the hex code can be shortened.
+
+**before**: `#FF0000`
+
+**after**: `#F00`
+
+This shortened form gives one digit for red, one digit for green, and one digit for blue. This reduces the total number of possible colors to around 4,000, But browsers interpret this as #FF0000 and #F00 as the same exact color.
+
+### Example
+|Color	|Short Hex Code|
+| --- | --- |
+|Cyan	|#0FF|
+|Green	|#0F0|
+|Red	|#F00|
+|Fuchsia	|#F0F|
