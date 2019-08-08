@@ -11,6 +11,7 @@ The following list of selector types increases by specificity:
 
 Inline styles added to an element always overwrite any styles in external stylesheets.
 
+## Order of Declaration
 The order of the `class` declarations in the stylesheet or `<style>` section are important. The second declaration or the last declaration
 will always take precedence over the previous. 
 
