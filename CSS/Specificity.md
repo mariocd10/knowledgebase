@@ -8,6 +8,7 @@ The following list of selector types increases by specificity:
 1. Type Selectors (e.g `h1`)
 2. Class Selectors
 3. ID Selectors
+4. Inline Style
 
 Inline styles added to an element always overwrite any styles in external stylesheets.
 
