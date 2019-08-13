@@ -12,7 +12,7 @@ In CSS, we can use 6 hexadecimal digits to represent colors, two each for the re
 
 ```css
 body {
-  color: #000000;
+  color: #000000; // black
 }
 ```
 
@@ -31,3 +31,18 @@ This shortened form gives one digit for red, one digit for green, and one digit 
 |Green	|#0F0|
 |Red	|#F00|
 |Fuchsia	|#F0F|
+
+## RGB
+Another way to represent colors in CSS is **RGB** values. 
+
+The RGB value for black looks like this: `rgb(0,0,0)`
+
+The RGB value for white looks like this: `rbg(255,255,255)`
+
+RGB, specifies the brightness of each color with a number between 0 - 255. RGB has the same amount of possible values as *hex code*.
+
+```css
+body {
+	background-color: rgb(255,165,0); // orange
+}
+```
