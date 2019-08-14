@@ -2,6 +2,7 @@
 Small bits of knowledge that have helped me throughout my dev journey. From code snippets to definitions.
 
 ## Table of Contents
+- [CSS](https://github.com/mariocd10/knowledgebase/tree/master/CSS)
 - [HTML](https://github.com/mariocd10/knowledgebase/tree/master/HTML)
 - [JQuery](https://github.com/mariocd10/knowledgebase/tree/master/JQuery)
 - [Oracle APEX](https://github.com/mariocd10/knowledgebase/tree/master/Oracle%20APEX)
