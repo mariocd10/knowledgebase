@@ -1,22 +1,39 @@
-# REF CURSOR
-## Example
+# REF CURSOR / Cursor Variable
+A `REF CURSOR` is a **variable** that references a **cursor**.
+
+A `REF CURSOR` is a PL/SQL data type whose value is the memory address of a query work area on the database. Meaning, a `REF CURSOR` is a pointer or a handle to a result set on the database. 
+
+## Creating a REF CURSOR
+```sql
+CREATE OR REPLACE FUNCTION get_dept_emps(p_deptno IN NUMBER) RETURN sys_refcursor IS
+  v_rc sys_refcursor;
+  BEGIN
+    OPEN v_rc FOR 'select empno, ename, mgr, sal from emp where deptno = :deptno' using p_deptno;
+    RETURN v_rc;
+  END;
+```
+
+## FETCH DATA from REF CURSOR
 ```sql
 DECLARE
-  c1 sys_refcursor;
-  ename VARCHAR2(10);
-  sal NUMBER;
+  v_rc    sys_refcursor;
+  v_empno NUMBER;
+  v_ename VARCHAR2(10);
+  v_mgr   NUMBER;
+  v_sal   NUMBER;
 BEGIN
-  OPEN c1 FOR SELECT ename, sal FROM emp;
+  v_rc := get_dept_emps(10);  -- This returns an open cursor
   LOOP
-    FETCH c1 INTO ename, sal;
-    EXIT WHEN c1%notfound;
-    dbms_output.put_line('Ename: ' || ename || ', Salary: ' || sal);
+    FETCH v_rc into v_empno, v_ename, v_mgr, v_sal;
+    EXIT WHEN v_rc%NOTFOUND;  -- Exit the loop when we've run out of data
+    dbms_output.put_line('Row: '||v_rc%ROWCOUNT||' # '||v_empno||','||v_ename||','||v_mgr||','||v_sal);
   END LOOP;
-  CLOSE c1;
+  CLOSE v_rc;
+  FETCH v_rc into v_empno, v_ename, v_mgr, v_sal;
 END;
 ```
 
-## Differences between a CURSOR
+## REF CURSOR vs CURSOR
 1) A ref cursor can not be used in `CURSOR FOR LOOP`, it must be used in simple `CURSOR LOOP` statement as in example.
 2) A ref cursor is defined at **runtime and can be opened dynamically** but a regular cursor is static and defined at compile time.
 3) A ref cursor can be passed to another PL/SQL routine (function or procedure) or **returned to a client**. A regular cursor cannot be returned to a client application and must be consumed within same routine.
