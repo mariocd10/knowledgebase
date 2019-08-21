@@ -17,3 +17,17 @@
 `width`: [*em, px, %*]
 
 `height`: [*em, px, %*]
+
+`background-color`: Changes the color of the element holding the text.
+
+## Color
+```
+rgba stands for: 
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+  ```
+  
+  The RGB value can range from 0 to 255. The alpha value can range from 0 - 1. 0 being transparent and 1 being opaque or a solid color.
+  
