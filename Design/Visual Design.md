@@ -20,6 +20,17 @@
 
 `background-color`: Changes the color of the element holding the text.
 
+`font-size`: Change the size of the text font
+
+`box-shadow`: Property applies one or more shadows to an element.
+
+The `box-shadow` property takes values for `offset-x` (how far to push the shadow horizontally from the element), `offset-y` (how far to push the shadow vertically from the element), `blur-radius`, `spread-radius` and a `color` value, in that order. The `blur-radius` and `spread-radius` values are optional.
+
+Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+```css
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+```
+
 ## Color
 ```
 rgba stands for: 
