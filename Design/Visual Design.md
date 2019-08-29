@@ -21,6 +21,18 @@
 `background-color`: Changes the color of the element holding the text.
 
 `font-size`: Change the size of the text font
+
+`text-transform`: Change how the text is displayed without modifying the actual content
+
+|Value |	Result|
+|--- | --- |
+|lowercase|	"transform me"|
+|uppercase	|"TRANSFORM ME"|
+|capitalize	|"Transform Me"|
+|initial|	Use the default value|
+|inherit|	Use the text-transform value from the parent element|
+|none|	Default: Use the original text|
+
 ### Box-shadow
 `box-shadow`: Property applies one or more shadows to an element.
 
