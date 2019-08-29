@@ -22,6 +22,8 @@
 
 `font-size`: Change the size of the text font
 
+`font-weight`: Sets how thick or thin characters are in a section of text.
+
 `text-transform`: Change how the text is displayed without modifying the actual content
 
 |Value |	Result|
