@@ -26,6 +26,8 @@
 
 `text-transform`: Change how the text is displayed without modifying the actual content
 
+`line-height`: Change the height of each line in text.
+
 |Value |	Result|
 |--- | --- |
 |lowercase|	"transform me"|
