@@ -4,6 +4,9 @@ CSS treats each HTML element as its own box, which is usually referred to as the
 The default layout of elements in this way is called the **normal flow** of a document, 
 but CSS offers the `position` property to override it.
 
+**Note**
+Positioning gives you a lot of flexibility and power over the visual layout of a page. It's good to remember that no matter the position of elements, the underlying HTML markup should be organized and make sense when read from top to bottom. This is how users with *visual impairments* (who rely on assistive devices like screen readers) access your content.
+
 ## Relative
 When the position of an element is set to **relative**, 
 it allows you to specify how CSS should move it relative to its **current position** in the normal flow of the page. 
@@ -16,3 +19,4 @@ p {
   bottom: 10px;
   }
 ```
+Changing an element's position to `relative` does not remove it from the normal flow - other elements around it still behave as if that item were in its default position.
