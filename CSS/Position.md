@@ -20,3 +20,12 @@ p {
   }
 ```
 Changing an element's position to `relative` does not remove it from the normal flow - other elements around it still behave as if that item were in its default position.
+
+## Offset
+The CSS offsets of `top` or `bottom`, and `left` or `right` tell the browser how far to offset an item relative to where it would sit in the normal flow of the document. You're offsetting an element away from a given spot, which moves the element away from the referenced side (effectively, the opposite direction).
+```
+h2 {
+  top: 10px;
+  bottom: 14px;
+  }
+```
