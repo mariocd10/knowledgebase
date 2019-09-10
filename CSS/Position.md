@@ -26,6 +26,11 @@ locks the element in place relative to its parent container. Unlike the `relativ
 
 One nuance with `absolute` positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using `position: relative;`), the browser will keep looking up the chain and ultimately default to the `body` tag.
 
+## Fixed
+The next layout scheme that CSS offers is the `fixed` position, which is a type of absolute positioning that **locks** an element **relative to the browser window**. Similar to `absolute` positioning, it's used with the **CSS offset properties** and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.
+
+One key difference between the `fixed` and `absolute` positions is that an element with a `fixed` position won't move when the user scrolls.
+
 ## Offset
 The CSS offsets of `top` or `bottom`, and `left` or `right` tell the browser how far to offset an item relative to where it would sit in the normal flow of the document. You're offsetting an element away from a given spot, which moves the element away from the referenced side (effectively, the opposite direction).
 ```css
