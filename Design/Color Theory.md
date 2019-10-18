@@ -49,3 +49,13 @@ Color	HSL
 | cyan	| hsl(180, 100%, 50%) |
 | blue	| hsl(240, 100%, 50%) |
 | magenta	| hsl(300, 100%, 50%) |
+
+## Color Gradient
+Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the background property's linear-gradient() function. Here is the general syntax:
+
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45deg is angled like a backslash. The following arguments specify the order of colors used in the gradient.
+
+Example:
+`background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255));`
