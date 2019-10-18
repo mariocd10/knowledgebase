@@ -24,3 +24,7 @@ There are many color picking tools available online that have an option to find 
 **Note**: For all color challenges: Using color can be a powerful way to add visual interest to a page. 
 However, color alone should not be used as the only way to convey important information because users with 
 visual impairments may not understand that content. This issue will be covered in more detail in the Applied Accessibility challenges.
+
+## Complementary Colors
+The Complementary Colors challenge showed that opposite colors on the color wheel can make each other appear more vibrant when placed side-by-side. However, the strong visual contrast can be jarring if it's overused on a website, and can sometimes make text harder to read if it's placed on a complementary-colored background. In practice, one of the colors is usually dominant and the complement is used to bring visual attention to certain content on the page.
+
